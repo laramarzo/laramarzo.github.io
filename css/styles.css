@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Grafica';
+    src: url('../assets/fonts/grafika.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'Deserta';
+    src: url('../assets/fonts/deserta.otf') format('opentype');
+}
+
+:root {
+    --primary-color: #f7f6f2;
+    --accent-color: #252525;
+}
+
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    min-width: 320px;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+
+.central-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jumbo-letters {
+    font-family: "Grafica", sans-serif, regular;
+    font-size: min(max(15vw, 3rem), 10rem);
+    font-weight: lighter;
+    color: var(--accent-color);
+}
+
+.jumbo-slogan {
+    font-family: "Deserta", sans-serif, regular;
+    font-size: min(max(10vw, 1rem), 2rem);
+    color: var(--accent-color);
+    transition: 1s ease-in-out;
+}
